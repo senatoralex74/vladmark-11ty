@@ -1,4 +1,13 @@
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 #main-nav {
     display: flex;
     list-style: none;
@@ -8,6 +17,7 @@
 
 nav a {
     font-family: Montserrat;
+    font-size: 28px;
     font-style: normal;
     font-weight: normal;
     text-transform: capitalize;
