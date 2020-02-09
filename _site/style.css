@@ -1,6 +1,23 @@
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 32px;
-    line-height: 40px;
-    color: green;
+
+#main-nav {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+
+nav a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: #3c3c3c;
+}
+
+.active {
+    border-bottom: #F2994A 0.25em solid;
 }
