@@ -1,7 +1,11 @@
 
+body {
+    background-color: #1b212c;
+}
+
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -20,12 +24,12 @@ nav a {
     font-size: 28px;
     font-style: normal;
     font-weight: normal;
-    text-transform: capitalize;
+    text-transform: uppercase;
     transition: 0.4s;
 }
 
 nav a:hover {
-    color: #3c3c3c;
+    color: #a7a7a7;
 }
 
 .active {
