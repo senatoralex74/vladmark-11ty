@@ -1,11 +1,23 @@
+html, body {
+    height: 100%;
+}
 
 body {
     background-color: #1b212c;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
     color: white;
+    transition: 0.4s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a7a7a7;
 }
 
 p {
@@ -16,10 +28,11 @@ p {
     color: white;    
 }
 
-a:hover {
-    text-decoration: none;
+.content {
+    flex: 1 0 auto;
 }
-
+  
+/* Navigation Bar */
 #main-nav {
     display: flex;
     flex-direction: row;
@@ -33,11 +46,6 @@ nav a {
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
-    transition: 0.4s;
-}
-
-nav a:hover {
-    color: #a7a7a7;
 }
 
 .active {
@@ -45,7 +53,8 @@ nav a:hover {
 }
 
 #logo {
-    width: 200px;
+    width: 150px;
+    margin-top: 10px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -88,6 +97,7 @@ nav ul li ul li {
     background: #1b212c;
 }
 
+/* Home Page */
 main {
     margin-top: 10px;
     display: flex;
@@ -124,4 +134,75 @@ main table td {
     font-weight: normal;
     color: white;
     padding: 10px;
+}
+
+/* Product */
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-col1 {
+    width: 70%;
+}
+
+.product-col2 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.product-description,
+.product-safety {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.product-image {
+    width: 100%;
+    height: 512px;
+    margin: auto;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a,
+footer p {
+    margin: auto;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+
+#contacts {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
