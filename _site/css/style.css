@@ -15,6 +15,10 @@ a {
     transition: 0.4s;
 }
 
+.data_sheet {
+    text-decoration: underline;
+}
+
 a:hover {
     text-decoration: none;
     color: #a7a7a7;
